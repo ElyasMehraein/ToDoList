@@ -52,7 +52,7 @@ export default class TodoList extends Component {
 
     completedTodo.forEach((todo) => {
       if (todo.id === id) {
-        todo.completed = true;
+        todo.completed = !todo.completed;
       }
     });
     console.log("from inja", completedTodo);
